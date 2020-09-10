@@ -21,7 +21,7 @@
    <img src="https://user-images.githubusercontent.com/59374587/92736464-b0f4fc00-f350-11ea-8da2-902b79475772.gif">
    </p>
 
-   > * You can see all version previews in [`demos`](https://github.com/felipecastrosales/Currency-Converter-Flutter/demos) folder. 🧐📂
+   > * You can see all version previews in [`demos`](https://github.com/felipecastrosales/Currency-Converter-Flutter/tree/master/demos) folder. 🧐📂
 
 ---
 
