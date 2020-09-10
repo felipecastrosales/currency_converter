@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="891feeb3-8a15-4fc3-b726-e94bbdaf4f43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demos/version1.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,6 +11,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlutterView" splitter-proportion="0.2937365" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -45,38 +53,42 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="119" y="42" key="#Intentions" timestamp="1599682393827">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="119" y="42" key="#Intentions/0.0.1366.768@0.0.1366.768" timestamp="1599682393827" />
     <state x="363" y="92" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593692404904">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="92" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1593692404904" />
-    <state x="294" y="129" key="FileChooserDialogImpl" timestamp="1597932037659">
+    <state x="294" y="129" key="FileChooserDialogImpl" timestamp="1599656190415">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="294" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593690653764" />
-    <state x="294" y="129" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1597932037659" />
-    <state width="990" height="69" key="GridCell.Tab.0.bottom" timestamp="1599593643740">
+    <state x="294" y="129" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1599656190415" />
+    <state width="994" height="95" key="GridCell.Tab.0.bottom" timestamp="1599614836954">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="984" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593721431161" />
-    <state width="990" height="69" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1599593643740" />
+    <state width="994" height="95" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1599614836954" />
     <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594341768338" />
-    <state width="990" height="69" key="GridCell.Tab.0.center" timestamp="1599593643740">
+    <state width="994" height="95" key="GridCell.Tab.0.center" timestamp="1599614836954">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="984" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593721431161" />
-    <state width="990" height="69" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1599593643740" />
+    <state width="994" height="95" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1599614836954" />
     <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594341768338" />
-    <state width="990" height="69" key="GridCell.Tab.0.left" timestamp="1599593643740">
+    <state width="994" height="95" key="GridCell.Tab.0.left" timestamp="1599614836953">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="984" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593721431161" />
-    <state width="990" height="69" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1599593643740" />
+    <state width="994" height="95" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1599614836953" />
     <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594341768338" />
-    <state width="990" height="69" key="GridCell.Tab.0.right" timestamp="1599593643740">
+    <state width="994" height="95" key="GridCell.Tab.0.right" timestamp="1599614836954">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="984" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593721431161" />
-    <state width="990" height="69" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1599593643740" />
+    <state width="994" height="95" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1599614836954" />
     <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594341768338" />
     <state x="184" y="26" key="SettingsEditor" timestamp="1599160269490">
       <screen x="0" y="0" width="1366" height="768" />
@@ -91,6 +103,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/components/utils.dart</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint suspend="THREAD" type="dart-exception" />
       </default-breakpoints>

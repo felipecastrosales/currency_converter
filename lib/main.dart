@@ -34,20 +34,22 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   final realController = TextEditingController();
   final dollarController = TextEditingController();
   final euroController = TextEditingController();
+  final britishController = TextEditingController();
   final bitcoinController = TextEditingController();
 
   double dollar;
   double euro;
+  double british;
   double bitcoin;
 
   void _clearAll() {
     realController.text = '';
     dollarController.text = '';
     euroController.text = '';
+    britishController.text = '';
     bitcoinController.text = '';
   }
 
@@ -60,6 +62,7 @@ class _HomeState extends State<Home> {
     double real = double.parse(text);
     dollarController.text = (real / dollar).toStringAsFixed(2);
     euroController.text = (real / euro).toStringAsFixed(2);
+    britishController.text = (real / british).toStringAsFixed(2);
     bitcoinController.text = (real / bitcoin).toStringAsFixed(5);
   }
 
@@ -72,7 +75,8 @@ class _HomeState extends State<Home> {
     double dollar = double.parse(text);
     realController.text = (dollar * this.dollar).toStringAsFixed(2);
     euroController.text = (dollar * this.dollar / euro).toStringAsFixed(2);
-    bitcoinController.text = (dollar * this.euro / bitcoin).toStringAsFixed(5);
+    britishController.text = (dollar * this.dollar / british).toStringAsFixed(2);
+    bitcoinController.text = (dollar * this.dollar / bitcoin).toStringAsFixed(5);
   }
 
   void _euroChanged(String text) {
@@ -84,7 +88,21 @@ class _HomeState extends State<Home> {
     double euro = double.parse(text);
     realController.text = (euro * this.euro).toStringAsFixed(2);
     dollarController.text = (euro * this.euro / dollar).toStringAsFixed(2);
+    britishController.text = (euro * this.euro / british).toStringAsFixed(2);
     bitcoinController.text = (euro * this.euro / bitcoin).toStringAsFixed(5);
+  }
+
+  void _britishChanged(String text) {
+    if (text.isEmpty) {
+      _clearAll();
+      return;
+    }
+
+    double british = double.parse(text);
+    realController.text = (british * this.british).toStringAsFixed(2);
+    dollarController.text = (british * this.british / dollar).toStringAsFixed(2);
+    euroController.text = (british * this.british / euro).toStringAsFixed(2);
+    bitcoinController.text = (british * this.british / bitcoin).toStringAsFixed(5);
   }
 
   void _bitcoinChanged(String text) {
@@ -100,18 +118,40 @@ class _HomeState extends State<Home> {
         (bitcoin * this.bitcoin / dollar).toStringAsFixed(2);
   }
 
+  static const _goldenColor = const Color(0xFFFFD700);
+  // static const _fieldsColor = const Color(0xFFFFF3B2);
+  static const _lightColor = const Color(0xFFFEFFDB);
+
+  final kLabelStyle =
+      TextStyle(color: _goldenColor, fontWeight: FontWeight.bold, fontSize: 22);
+
+  Widget buildTextField(String label, String prefix,
+      TextEditingController changeMoney, Function changed) {
+    return TextField(
+        controller: changeMoney,
+        decoration: InputDecoration(
+            border: InputBorder.none,
+            labelText: label,
+            labelStyle: kLabelStyle,
+            prefixText: prefix),
+        style: kLabelStyle,
+        onChanged: changed,
+        keyboardType: TextInputType.numberWithOptions(decimal: true),
+      );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: _lightColor,
         appBar: AppBar(
-          title: Text('\$ Conversor de Moedas \$',
-              style: TextStyle(color: Colors.white)),
-          backgroundColor: Colors.amber,
+          title: Text('Currency Converter',
+              style: TextStyle(color: _lightColor, fontSize: 26)),
+          backgroundColor: _goldenColor,
           centerTitle: true,
           actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.refresh, color: Colors.white),
+              icon: Icon(Icons.refresh, color: _lightColor, size: 26),
               onPressed: _clearAll,
             ),
           ],
@@ -124,49 +164,56 @@ class _HomeState extends State<Home> {
                 case ConnectionState.waiting:
                   return Center(
                       child: Text(
-                    'Carregando Dados...',
-                    style: TextStyle(
-                        color: Colors.amber,
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.bold),
+                    'Loading API Data...',
+                    style: kLabelStyle,
                     textAlign: TextAlign.center,
                   ));
                 default:
                   if (snapshot.hasError) {
                     return Center(
                         child: Text(
-                      'Erro ao carregar dados...',
-                      style: TextStyle(
-                          color: Colors.amber,
-                          fontSize: 25.0,
-                          fontWeight: FontWeight.bold),
+                      'Error Loading Data...',
+                      style: kLabelStyle,
                       textAlign: TextAlign.center,
                     ));
                   } else {
                     dollar =
-                    snapshot.data['results']['currencies']['USD']['buy'];
+                      snapshot.data['results']['currencies']['USD']['buy'];
                     euro =
-                    snapshot.data['results']['currencies']['EUR']['buy'];
+                      snapshot.data['results']['currencies']['EUR']['buy'];
+                    british =
+                      snapshot.data['results']['currencies']['GBP']['buy'];
                     bitcoin =
-                    snapshot.data['results']['currencies']['BTC']['buy'];
+                      snapshot.data['results']['currencies']['BTC']['buy'];
                     return SingleChildScrollView(
                         child: Padding(
-                      padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 30.0),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 30, vertical: 8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           Icon(Icons.monetization_on,
-                              size: 150.0, color: Colors.amber),
-                          buildTextField(
-                              'Reais', 'R\$', realController, _realChanged),
+                              size: 120.0, color: _goldenColor),
+                          Divider(
+                              color: _goldenColor,
+                              thickness: 2.5,
+                              indent: 60,
+                              endIndent: 60
+                          ),
                           Divider(),
                           buildTextField(
-                              'Dólar', '\$', dollarController, _dollarChanged),
+                              'Real', 'R\$ ', realController, _realChanged),
                           Divider(),
                           buildTextField(
-                              'Euros', '€', euroController, _euroChanged),
+                              'Dollar', '\$ ', dollarController, _dollarChanged),
                           Divider(),
-                          buildTextField('Bitcoin', '₿', bitcoinController,
+                          buildTextField(
+                              'Euro', '€ ', euroController, _euroChanged),
+                          Divider(),
+                          buildTextField('Pound Sterling', '£ ', britishController,
+                              _britishChanged),
+                          Divider(),
+                          buildTextField('Bitcoin', '₿ ', bitcoinController,
                               _bitcoinChanged),
                         ],
                       ),
@@ -175,22 +222,4 @@ class _HomeState extends State<Home> {
               }
             }));
   }
-}
-
-Widget buildTextField(String label, String prefix,
-    TextEditingController changeMoney, Function changed) {
-  return TextField(
-    controller: changeMoney,
-    decoration: InputDecoration(
-        labelText: label,
-        labelStyle: TextStyle(color: Colors.amber, fontWeight: FontWeight.bold),
-        border: OutlineInputBorder(),
-        prefixText: prefix),
-    style: TextStyle(
-      color: Colors.amber,
-      fontSize: 22.0,
-    ),
-    onChanged: changed,
-    keyboardType: TextInputType.numberWithOptions(decimal: true),
-  );
 }
