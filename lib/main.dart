@@ -11,15 +11,11 @@ void main() async {
     debugShowCheckedModeBanner: false,
     home: Home(),
     theme: ThemeData(
-        hintColor: Colors.amber,
-        primaryColor: Colors.white,
         inputDecorationTheme: InputDecorationTheme(
-          enabledBorder:
-              OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
-          focusedBorder:
-              OutlineInputBorder(borderSide: BorderSide(color: Colors.amber)),
-          hintStyle: TextStyle(color: Colors.amber),
-        )),
+      focusedBorder:
+          OutlineInputBorder(borderSide: BorderSide(color: Colors.amber)),
+      hintStyle: TextStyle(color: Colors.amber),
+    )),
   ));
 }
 
@@ -75,8 +71,10 @@ class _HomeState extends State<Home> {
     double dollar = double.parse(text);
     realController.text = (dollar * this.dollar).toStringAsFixed(2);
     euroController.text = (dollar * this.dollar / euro).toStringAsFixed(2);
-    britishController.text = (dollar * this.dollar / british).toStringAsFixed(2);
-    bitcoinController.text = (dollar * this.dollar / bitcoin).toStringAsFixed(5);
+    britishController.text =
+        (dollar * this.dollar / british).toStringAsFixed(2);
+    bitcoinController.text =
+        (dollar * this.dollar / bitcoin).toStringAsFixed(5);
   }
 
   void _euroChanged(String text) {
@@ -100,9 +98,11 @@ class _HomeState extends State<Home> {
 
     double british = double.parse(text);
     realController.text = (british * this.british).toStringAsFixed(2);
-    dollarController.text = (british * this.british / dollar).toStringAsFixed(2);
+    dollarController.text =
+        (british * this.british / dollar).toStringAsFixed(2);
     euroController.text = (british * this.british / euro).toStringAsFixed(2);
-    bitcoinController.text = (british * this.british / bitcoin).toStringAsFixed(5);
+    bitcoinController.text =
+        (british * this.british / bitcoin).toStringAsFixed(5);
   }
 
   void _bitcoinChanged(String text) {
@@ -113,14 +113,15 @@ class _HomeState extends State<Home> {
 
     double bitcoin = double.parse(text);
     realController.text = (bitcoin * this.bitcoin).toStringAsFixed(2);
-    euroController.text = (bitcoin * this.bitcoin / euro).toStringAsFixed(2);
     dollarController.text =
         (bitcoin * this.bitcoin / dollar).toStringAsFixed(2);
+    euroController.text = (bitcoin * this.bitcoin / euro).toStringAsFixed(2);
+    britishController.text =
+        (bitcoin * this.bitcoin / british).toStringAsFixed(2);
   }
 
   static const _goldenColor = const Color(0xFFFFD700);
-  // static const _fieldsColor = const Color(0xFFFFF3B2);
-  static const _lightColor = const Color(0xFFFEFFDB);
+  static const _lightColor = const Color(0xFFFfcfaf1);
 
   final kLabelStyle =
       TextStyle(color: _goldenColor, fontWeight: FontWeight.bold, fontSize: 22);
@@ -128,16 +129,16 @@ class _HomeState extends State<Home> {
   Widget buildTextField(String label, String prefix,
       TextEditingController changeMoney, Function changed) {
     return TextField(
-        controller: changeMoney,
-        decoration: InputDecoration(
-            border: InputBorder.none,
-            labelText: label,
-            labelStyle: kLabelStyle,
-            prefixText: prefix),
-        style: kLabelStyle,
-        onChanged: changed,
-        keyboardType: TextInputType.numberWithOptions(decimal: true),
-      );
+      controller: changeMoney,
+      decoration: InputDecoration(
+          border: InputBorder.none,
+          labelText: label,
+          labelStyle: kLabelStyle,
+          prefixText: prefix),
+      style: kLabelStyle,
+      onChanged: changed,
+      keyboardType: TextInputType.numberWithOptions(decimal: true),
+    );
   }
 
   @override
@@ -178,13 +179,12 @@ class _HomeState extends State<Home> {
                     ));
                   } else {
                     dollar =
-                      snapshot.data['results']['currencies']['USD']['buy'];
-                    euro =
-                      snapshot.data['results']['currencies']['EUR']['buy'];
+                        snapshot.data['results']['currencies']['USD']['buy'];
+                    euro = snapshot.data['results']['currencies']['EUR']['buy'];
                     british =
-                      snapshot.data['results']['currencies']['GBP']['buy'];
+                        snapshot.data['results']['currencies']['GBP']['buy'];
                     bitcoin =
-                      snapshot.data['results']['currencies']['BTC']['buy'];
+                        snapshot.data['results']['currencies']['BTC']['buy'];
                     return SingleChildScrollView(
                         child: Padding(
                       padding:
@@ -198,20 +198,19 @@ class _HomeState extends State<Home> {
                               color: _goldenColor,
                               thickness: 2.5,
                               indent: 60,
-                              endIndent: 60
-                          ),
+                              endIndent: 60),
                           Divider(),
                           buildTextField(
                               'Real', 'R\$ ', realController, _realChanged),
                           Divider(),
-                          buildTextField(
-                              'Dollar', '\$ ', dollarController, _dollarChanged),
+                          buildTextField('Dollar', '\$ ', dollarController,
+                              _dollarChanged),
                           Divider(),
                           buildTextField(
                               'Euro', '€ ', euroController, _euroChanged),
                           Divider(),
-                          buildTextField('Pound Sterling', '£ ', britishController,
-                              _britishChanged),
+                          buildTextField('Pound Sterling', '£ ',
+                              britishController, _britishChanged),
                           Divider(),
                           buildTextField('Bitcoin', '₿ ', bitcoinController,
                               _bitcoinChanged),
