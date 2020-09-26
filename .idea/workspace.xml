@@ -27,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lista_de_tarefas" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -57,11 +57,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="92" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1593692404904" />
-    <state x="294" y="129" key="FileChooserDialogImpl" timestamp="1599656190415">
+    <state x="294" y="129" key="FileChooserDialogImpl" timestamp="1599746781815">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="294" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593690653764" />
-    <state x="294" y="129" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1599656190415" />
+    <state x="294" y="129" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1599746781815" />
     <state width="994" height="87" key="GridCell.Tab.0.bottom" timestamp="1599699194018">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

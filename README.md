@@ -21,7 +21,7 @@
    <img src="https://user-images.githubusercontent.com/59374587/92736464-b0f4fc00-f350-11ea-8da2-902b79475772.gif">
    </p>
 
-   > * You can see all version previews in [`demos`](https://github.com/felipecastrosales/Currency-Converter-Flutter/tree/master/demos) folder. 🧐📂
+   > * You can see all version previews in [`demos`](https://github.com/felipecastrosales/Currency-Converter/tree/master/demos) folder. 🧐📂
 
 ---
 
@@ -30,7 +30,7 @@
    </h2>
 
    This application was simple to make, and I intend to make more updates to it in the future. In the current version (1.8), I put two more coins, the Pound Sterling and Bitcoin.<br>
-   I used the HGBrasil API, which is very simple to use, see the [documentation](https://console.hgbrasil.com/documentation/finance), but just create your key, and put it as a const, and use it. You can also see in [lib/main.dart](https://github.com/felipecastrosales/Currency-Converter-Flutter/blob/master/lib/main.dart) as I used it.<br>
+   I used the HGBrasil API, which is very simple to use, see the [documentation](https://console.hgbrasil.com/documentation/finance), but just create your key, and put it as a const, and use it. You can also see in [lib/main.dart](https://github.com/felipecastrosales/Currency-Converter/blob/master/lib/main.dart) as I used it.<br>
 
 ---
 
@@ -38,10 +38,10 @@
 
    ```   
    - Clone this repository:
-   $ git clone https://github.com/felipecastrosales/Currency-Converter-Flutter
+   $ git clone https://github.com/felipecastrosales/Currency-Converter
 
    - Enter in directory:
-   $ cd Currency-Converter-Flutter
+   $ cd Currency-Converter
 
    - For install dependencies:
    $ flutter packages get
@@ -54,11 +54,11 @@
 
    <h2 align="center">License 📝</h2>
 
-   This repository is under MIT license. You can see the [LICENSE](https://github.com/felipecastrosales/Currency-Converter-Flutter/blob/master/LICENSE) file for more details. 😉
+   This repository is under MIT license. You can see the [LICENSE](https://github.com/felipecastrosales/Currency-Converter/blob/master/LICENSE) file for more details. 😉
 
    ---
 
-   >This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with the instructor **[Daniel Ciolfi](https://linkedin.com/in/maykbrito)**, in the course  **["Creating Android and iOS Apps with Flutter - Create 16 Apps"](https://www.udemy.com/course/curso-completo-flutter-app-android-ios)** on **[Udemy](https://www.udemy.com/)**.<br>
+   >This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with the instructor **[Daniel Ciolfi](https://linkedin.com/in/danielciolfi)**, in the course  **["Creating Android and iOS Apps with Flutter - Create 16 Apps"](https://www.udemy.com/course/curso-completo-flutter-app-android-ios)** on **[Udemy](https://www.udemy.com/)**.<br>
    If it helped you, give ⭐, contribute, it will help me too 😉
 
 ---
