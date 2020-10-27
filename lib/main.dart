@@ -11,10 +11,14 @@ void main() async {
     debugShowCheckedModeBanner: false,
     home: Home(),
     theme: ThemeData(
-        inputDecorationTheme: InputDecorationTheme(
+    hintColor: Colors.white,
+    primaryColor: Colors.white,
+    inputDecorationTheme: InputDecorationTheme(
+      enabledBorder:
+          OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
       focusedBorder:
-          OutlineInputBorder(borderSide: BorderSide(color: Colors.amber)),
-      hintStyle: TextStyle(color: Colors.amber),
+          OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+      hintStyle: TextStyle(color: Colors.white),
     )),
   ));
 }
@@ -180,7 +184,8 @@ class _HomeState extends State<Home> {
                   } else {
                     dollar =
                         snapshot.data['results']['currencies']['USD']['buy'];
-                    euro = snapshot.data['results']['currencies']['EUR']['buy'];
+                    euro = 
+                        snapshot.data['results']['currencies']['EUR']['buy'];
                     british =
                         snapshot.data['results']['currencies']['GBP']['buy'];
                     bitcoin =
