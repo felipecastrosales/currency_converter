@@ -10,7 +10,7 @@
       A simple Currency Converter made with Flutter 💙. <br>
       With this application, you can convert currencies asynchronously. The currencies available are: Real (from Brazil 💚), Dollar (United States, among others), Euro (official currency from European Union), British Pound (currency of the United Kingdom) and Bitcoin (an encrypted and decentralized currency).<br>
       The HGBrasil API was used.<br>
-      This application is in version 1.8.
+      This application is in version 2.1.
    </p>
 
 ---
@@ -18,7 +18,7 @@
    <h2 align="center">Preview 📱</h2><br>
 
    <p align="center">
-   <img src="https://user-images.githubusercontent.com/59374587/92736464-b0f4fc00-f350-11ea-8da2-902b79475772.gif">
+   <img src="https://github.com/felipecastrosales/CalculatorBMI/blob/master/demos/version2.gif?raw=true" width="500">
    </p>
 
    > * You can see all version previews in [`demos`](https://github.com/felipecastrosales/Currency-Converter/tree/master/demos) folder. 🧐📂
