@@ -1,8 +1,30 @@
  <p align="center">
-      <img src="https://user-images.githubusercontent.com/59374587/92721066-e4795b80-f33b-11ea-946a-524da2bbc74d.jpg" width="20%" alt="https://www.freepik.com/vectors/business Business vector created by rawpixel"/>
+      <img src="https://user-images.githubusercontent.com/59374587/92721066-e4795b80-f33b-11ea-946a-524da2bbc74d.jpg" width="15%" alt="https://www.freepik.com/vectors/business Business vector created by rawpixel"/>
    </p>
 
    <h1 align="center">Currency Converter</h1>
+
+   <h2 align="center">Topics 📋</h2>
+
+   <p>
+   
+   - [About 📖](#about-)
+
+   - [Preview 📱](#preview-)
+
+   - [Functionalities 🛠️](#functionalities-%EF%B8%8F)
+
+   - [Challenges and Learnings along the way 🤯](#---challenges-and-learnings-along-the-way----)
+
+   - [How to Use 🤔](#how-to-use-)
+
+   - [How to Contribute 💪](#how-to-contribute-)
+
+   - [License 📝](#license-)
+
+   <p>
+
+---
 
    <h2 align="center">About 📖</h2>
    
@@ -18,7 +40,7 @@
    <h2 align="center">Preview 📱</h2><br>
 
    <p align="center">
-   <img src="https://github.com/felipecastrosales/CalculatorBMI/blob/master/demos/version2.gif?raw=true" width="500">
+   <img src="demos/version1.8.gif" width="400">
    </p>
 
    > * You can see all version previews in [`demos`](https://github.com/felipecastrosales/Currency-Converter/tree/master/demos) folder. 🧐📂
@@ -38,16 +60,33 @@
 
    ```   
    - Clone this repository:
-   $ git clone https://github.com/felipecastrosales/Currency-Converter
+   $ git clone https://github.com/felipecastrosales/Currency-Converter currency converter
 
    - Enter in directory:
-   $ cd Currency-Converter
+   $ cd currency-converter
 
    - For install dependencies:
    $ flutter packages get
 
    - Run the app: 
    $ flutter run
+   ```
+
+---
+
+<h2 align="center">How to Contribute 💪</h2>
+
+   ```
+   - Fork the project 
+
+   - Create a new branch with your changes:
+   $ git checkout -b my-feature
+
+   - Save your changes and create a commit message telling you what you did:
+   $ git commit -m "feature: My new feature"
+
+   - Submit your changes:
+   $ git push origin my-feature
    ```
 
 ---
