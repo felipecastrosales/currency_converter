@@ -12,8 +12,6 @@
 
    - [Preview 📱](#preview-)
 
-   - [Functionalities 🛠️](#functionalities-%EF%B8%8F)
-
    - [Challenges and Learnings along the way 🤯](#---challenges-and-learnings-along-the-way----)
 
    - [How to Use 🤔](#how-to-use-)
