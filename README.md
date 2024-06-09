@@ -39,7 +39,7 @@
    Challenges and Learnings along the way 🤯
    </h2>
 
-   This application was simple to make, and I intend to make more updates to it in the future. In the current version (1.8), I put two more coins, the Pound Sterling and Bitcoin.<br>
+   This application was simple to make, and I intend to make more updates to it in the future.
    I used the HGBrasil API, which is very simple to use, see the [documentation](https://console.hgbrasil.com/documentation/finance), but just create your key, and put it as a const, and use it. You can also see in [lib/main.dart](https://github.com/felipecastrosales/currency_converter/blob/master/lib/main.dart) as I used it.<br>
 
 ---
