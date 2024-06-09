@@ -4,7 +4,7 @@
 
    <h1 align="center">Currency Converter</h1>
 
-   <h2 align="center">Topics 📋</h2>
+   <h2>Topics 📋</h2>
 
    <p>
    
@@ -19,44 +19,39 @@
 
 ---
 
-   <h2 align="center">About 📖</h2>
+   <h2>About 📖</h2>
    
-   <p align="center">
+   <p>
       A simple Currency Converter made with Flutter 💙. <br>
       With this application, you can convert currencies asynchronously. The currencies available are: Real (from Brazil 💚), Dollar (United States, among others), Euro (official currency from European Union), British Pound (currency of the United Kingdom) and Bitcoin (an encrypted and decentralized currency).<br>
       The HGBrasil API was used.<br>
-      This application is in version 2.1.
    </p>
 
 ---
 
-   <h2 align="center">Preview 📱</h2><br>
+   <h2>Preview 📱</h2><br>
 
-   <p align="center">
-   <img src="demos/version1.8.gif" width="400">
-   </p>
-
-   > * You can see all version previews in [`demos`](https://github.com/felipecastrosales/Currency-Converter/tree/master/demos) folder. 🧐📂
+   https://github.com/felipecastrosales/currency_converter/assets/59374587/6b272422-e7d3-453c-9851-c7ddaf247cbe
 
 ---
 
- <h2 align="center">
+ <h2>
    Challenges and Learnings along the way 🤯
    </h2>
 
    This application was simple to make, and I intend to make more updates to it in the future. In the current version (1.8), I put two more coins, the Pound Sterling and Bitcoin.<br>
-   I used the HGBrasil API, which is very simple to use, see the [documentation](https://console.hgbrasil.com/documentation/finance), but just create your key, and put it as a const, and use it. You can also see in [lib/main.dart](https://github.com/felipecastrosales/Currency-Converter/blob/master/lib/main.dart) as I used it.<br>
+   I used the HGBrasil API, which is very simple to use, see the [documentation](https://console.hgbrasil.com/documentation/finance), but just create your key, and put it as a const, and use it. You can also see in [lib/main.dart](https://github.com/felipecastrosales/currency_converter/blob/master/lib/main.dart) as I used it.<br>
 
 ---
 
-   <h2 align="center">How to Use 🤔</h2>
+   <h2>How to Use 🤔</h2>
 
    ```   
    - Clone this repository:
-   $ git clone https://github.com/felipecastrosales/Currency-Converter currency converter
+   $ git clone https://github.com/felipecastrosales/currency_converter
 
    - Enter in directory:
-   $ cd currency-converter
+   $ cd currency_converter
 
    - For install dependencies:
    $ flutter packages get
@@ -67,7 +62,7 @@
 
 ---
 
-<h2 align="center">How to Contribute 💪</h2>
+<h2>How to Contribute 💪</h2>
 
    ```
    - Fork the project 
@@ -84,9 +79,9 @@
 
 ---
 
-   <h2 align="center">License 📝</h2>
+   <h2>License 📝</h2>
 
-   This repository is under MIT license. You can see the [LICENSE](https://github.com/felipecastrosales/Currency-Converter/blob/master/LICENSE) file for more details. 😉
+   This repository is under MIT license. You can see the [LICENSE](https://github.com/felipecastrosales/currency_converter/blob/master/LICENSE) file for more details. 😉
 
    ---
 
@@ -95,7 +90,7 @@
 
 ---
 
-   <div align="center">
+   <div>
 
    [![Linkedin Badge](https://img.shields.io/badge/-Felipe%20Sales-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/felipecastrosales/)](https://www.linkedin.com/in/felipecastrosales/)
 
